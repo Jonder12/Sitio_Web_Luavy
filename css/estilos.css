@@ -50,3 +50,22 @@ header nav ul li a.activo {
     color: #c49ed4;
     text-decoration: underline;
 }
+
+footer {
+    border-top: 2px solid #C49ED4;
+}
+ 
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+ 
+footer div a:first-of-type {
+    margin-left: auto;
+}
+ 
+footer img:hover {
+    transform: rotateZ(45deg);
+}
