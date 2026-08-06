@@ -1,0 +1,43 @@
+#contenedor{
+  display: flex;
+  flex-direction: column; /* Apila las tarjetas verticalmente */
+  align-items: center;    /* Centra cada tarjeta horizontalmente */
+  gap: 25px;              /* Espacio vertical entre tarjetas */
+  max-width: 1200px; 
+  margin: 40px auto 0 auto; 
+  padding: 0 20px;
+}
+
+.nosotros:hover{
+    transform: scale(1.04);
+    box-shadow: 0 8px 20px rgba(196, 158, 212, 0.3);
+}
+
+.nosotros{
+  flex: 1; 
+  max-width: 850px; 
+  border: 2px solid #c49ed4; 
+  border-radius: 24px; 
+  padding: 24px 16px;
+  gap: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.quesomos{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto 30px auto;
+    padding: 0 20px;
+}
+
+div h2{
+  margin: 0 0 16px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #8AD1F2;
+}
