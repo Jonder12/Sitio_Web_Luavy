@@ -1,0 +1,114 @@
+.pagina-pf {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+.pagina-pf h1 {
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 2rem;
+}
+
+.pf-intro {
+    text-align: center;
+    color: #6b6b6b;
+    max-width: 520px;
+    margin: 10px auto 35px;
+}
+
+.lista-preguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* Tarjeta individual (details) */
+.pregunta {
+    background-color: #ffffff;
+    border: 2px solid #eadff5;
+    border-radius: 14px;
+    padding: 4px 20px;
+    box-shadow: 0 2px 6px rgba(196, 158, 212, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pregunta:hover {
+    border-color: #c49ed4;
+}
+
+.pregunta[open] {
+    border-color: #c49ed4;
+    box-shadow: 0 4px 12px rgba(196, 158, 212, 0.25);
+}
+
+/* Encabezado clickeable */
+.pregunta summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 30px 16px 0;
+    font-weight: 600;
+    color: #2b2b2b;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.pregunta summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Ícono "+" que rota a "x" al abrir */
+.pregunta summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #c49ed4;
+    transition: transform 0.3s ease;
+}
+
+.pregunta[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.pregunta summary:hover {
+    color: #a071b8;
+}
+
+/* Respuesta */
+.pregunta p {
+    padding: 0 0 18px;
+    color: #4a4a4a;
+    line-height: 1.6;
+    animation: desplegar 0.25s ease;
+}
+
+@keyframes desplegar {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .pagina-faq {
+        padding: 30px 14px 40px;
+    }
+
+    .pagina-faq h1 {
+        font-size: 1.6rem;
+    }
+
+    .pregunta summary {
+        font-size: 0.95rem;
+    }
+}
