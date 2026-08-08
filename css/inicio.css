@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Chewy&family=DynaPuff:wght@400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
+#banner{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.contenidoBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.contenidoBanner img{
+    
+    max-width: 600px;
+    height: auto;
+}
+.textoBanner{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-family: Chewy;
+    font-size: 40px;
+    color: #49195ee0;
+}
+.textoBanner h2{
+    font-family: DynaPuff;
+    font-size: 30px;
+    color: #49195eb4;
+}
+.queHacemos{ 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row; /* Apila las tarjetas horizontalmente */
+  align-items: center;    /* Centra cada tarjeta horizontalmente */
+  gap: 20px;              /* Espacio vertical entre tarjetas */
+  max-width: 1200px; 
+  margin: 40px auto; 
+  padding: 20px;
+}
+.queHacemos h2{
+    font-family: Bitter;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.descripcionQH{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 850px; 
+  width: 270px;
+  height: 325px;
+  border: 2px solid #c49ed4; 
+  border-radius: 24px; 
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+.iconoQH{
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+#btnConocenos, #btnPortafolio{
+    height: 50px;
+    width: 180px;
+    border-radius: 20px;
+    font-family: DynaPuff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 25px; 
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;   
+}
+#btnConocenos{
+    background-color: #c49ed4;
+    border: 2px solid #c49ed4;    
+}
+#btnPortafolio{
+    background-color: white;
+    border: 2px solid #c49ed4;
+}
+#btnConocenos a, #btnPortafolio a{
+    text-decoration: none;
+    font-weight: bold;
+    display: block; /*El enlace ocupa todo el botón*/
+    line-height: normal; /*El texto queda centrado verticalmente.*/
+    justify-content: center;
+    transition: color 0.2s ease;
+}
+#btnConocenos a{
+    color: white;
+}
+#btnPortafolio a{
+    color: #c49ed4;
+}
+#btnConocenos:hover, #btnPortafolio:hover{
+    transform: scale(1.05);
+}
+#btnConocenos:active{
+    background-color: white;
+    border: 2px solid #c49ed4;
+}
+#btnConocenos a:active{
+    color: #c49ed4;
+}
+#btnPortafolio:active{
+    background-color: #c49ed4;
+    border: 2px solid #c49ed4 ;
+}
+#btnPortafolio a:active{
+    color: white;
+}
