@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+}
+
+.clientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.clientes a img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+.clientes figcaption {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.clientes img:hover{
+    transform: scale(1.04);
+    transition: transform 0.2s ease;
+}
+
+#diferencias{
+     border: 4px solid #c49ed4;
+    border-radius: 20px;
+    text-align: center;
+    width: 70%;
+    margin: 30px auto 15px auto; 
+}
+
+#diferencias:hover{
+    transform: scale(1.04);
+    transition: transform 0.2s ease;
+}
+

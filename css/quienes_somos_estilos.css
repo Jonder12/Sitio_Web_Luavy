@@ -1,8 +1,8 @@
 #contenedor{
   display: flex;
-  flex-direction: column; /* Apila las tarjetas verticalmente */
-  align-items: center;    /* Centra cada tarjeta horizontalmente */
-  gap: 25px;              /* Espacio vertical entre tarjetas */
+  flex-direction: column; 
+  align-items: center;    
+  gap: 25px;              
   max-width: 1200px; 
   margin: 40px auto 0 auto; 
   padding: 0 20px;
