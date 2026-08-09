@@ -127,3 +127,50 @@ h1{
 #btnPortafolio a:active{
     color: white;
 }
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+    .contenidoBanner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .contenidoBanner img {
+        max-width: 85%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .textoBanner h2 {
+        font-size: 22px;
+    }
+
+    .descripcionQH {
+        width: 85%;
+        max-width: 300px;
+        height: auto;
+        min-height: 240px;
+    }
+
+    #btnConocenos, #btnPortafolio {
+        width: 85%;
+        max-width: 260px;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .textoBanner h2 {
+        font-size: 18px;
+    }
+}

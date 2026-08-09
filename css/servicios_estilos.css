@@ -1,20 +1,40 @@
-#destacamos{
-    width: 70%;
+/* =========================================================
+   BASE (Mobile First)
+   ========================================================= */
+#destacamos {
+    width: 90%;
     text-align: center;
-    margin: 30px auto 15px auto; 
+    margin: 30px auto 15px auto;
+}
+
+#serviciosFT {
+    border: 4px solid #c49ed4;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 30px auto 15px auto;
+    padding: 25px 20px;
+    transition: transform 0.2s ease;
+}
+
+#serviciosFT:hover {
+    transform: scale(1.04);
 }
 
 .lderecha, .lizquierda {
     display: flex;
+    flex-direction: column;
     align-items: center;
     border: 4px solid #c49ed4;
     border-radius: 20px;
-    padding: 15px 25px;
-    margin: 30px auto 15px auto; 
+    padding: 20px 18px;
+    margin: 20px auto;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    width: 70%;
-    transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    text-align: center;
+    gap: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .lderecha:hover, .lizquierda:hover {
@@ -24,26 +44,76 @@
 .descripcion {
     flex: 1;
     text-align: center;
-    margin: 0 20px;
+    margin: 0;
 }
 
-.lderecha {
-    flex-direction: row-reverse; 
+/* =========================================================
+   TABLET: #contenedor pasa a cuadrícula de 2 columnas
+   ========================================================= */
+@media (min-width: 768px) {
+    #contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 90%;
+        max-width: 950px;
+        margin: 30px auto;
+        align-items: stretch;
+    }
+
+    .lderecha, .lizquierda {
+        width: 100%;
+        margin: 0;
+    }
+
+    #destacamos, #serviciosFT {
+        width: 80%;
+    }
 }
 
-.lizquierda {
-    flex-direction: row; 
-}
+/* =========================================================
+   ESCRITORIO: cuadrícula de 3 columnas, tarjetas más grandes
+   ========================================================= */
+@media (min-width: 1024px) {
+    #destacamos {
+        width: 60%;
+    }
 
-#serviciosFT{
-    border: 4px solid #c49ed4;
-    border-radius: 20px;
-    text-align: center;
-    width: 70%;
-    margin: 30px auto 15px auto; 
-}
+    #contenedor {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1100px;
+        gap: 26px;
+    }
 
-#serviciosFT:hover{
-    transform: scale(1.04);
-    transition: transform 0.2s ease;
+    .lderecha, .lizquierda {
+        padding: 30px 22px;
+        min-height: 240px;
+        justify-content: center;
+    }
+
+    .lderecha img, .lizquierda img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .lderecha figcaption, .lizquierda figcaption {
+        font-size: 1.15rem;
+        font-weight: bold;
+        color: #49195e;
+    }
+
+    .lderecha:hover, .lizquierda:hover {
+        transform: translateY(-6px) scale(1);
+        box-shadow: 0 10px 22px rgba(196, 158, 212, 0.35);
+    }
+
+    #serviciosFT {
+        width: 60%;
+    }
+
+    /* Si el número de tarjetas no es múltiplo de 3, la última queda sola:
+       la centramos ubicándola en la columna del medio */
+    #contenedor > section:last-child {
+        grid-column: 2 / 3;
+    }
 }
