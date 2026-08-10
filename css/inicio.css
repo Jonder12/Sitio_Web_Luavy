@@ -52,6 +52,7 @@ h1{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    color: #410d58c7;
 }
 .descripcionQH{
   display: flex;

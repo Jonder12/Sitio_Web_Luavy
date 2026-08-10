@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
 .pagina-pf {
     max-width: 800px;
     margin: 0 auto;
@@ -6,8 +7,9 @@
 
 .pagina-pf h1 {
     text-align: center;
-    color: #2b2b2b;
     font-size: 2rem;
+    font-family: Chewy;
+    color: #49195ee0;
 }
 
 .pf-intro {

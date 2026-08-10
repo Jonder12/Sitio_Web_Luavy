@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=DynaPuff:wght@400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Shadows+Into+Light&display=swap');
 /* =========================================================
    BASE (Mobile First)
    ========================================================= */
-#destacamos {
+h1 {
+    font-family: Chewy;
+    font-size: 40px;
+    color: #49195ee0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+   #destacamos {
     width: 90%;
     text-align: center;
     margin: 30px auto 15px auto;

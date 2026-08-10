@@ -37,9 +37,20 @@ h1 {
 .tarjeta{
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    justify-items: center;
-    align-items: start;
+}
+@media (max-width: 600px){
+    h1{
+        font-size: 35px;
+    }
+    .imgsYvideos{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .portafolio img, .portafolio iframe{
+        width: 90%;
+        height: 400px;
+    }
+    /* .portafolio{
+        width: 100%;
+    } */
 }
