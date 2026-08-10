@@ -5,7 +5,6 @@
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    /* overflow: hidden; */
 }
 h1 {
     font-family: Chewy;
@@ -15,29 +14,17 @@ h1 {
     text-align: center;
 }
 .imgsYvideos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: grid; /*Cuadrícula*/
+    grid-template-columns: repeat(3, 1fr); /*Crea columnas del mismo ancho en un contenedor de cuadrícula (3)Cantidad de columnas- 1fr(fraction)Se divide en tres partes iguales*/
     gap: 50px;
     width: 100%;
     justify-items: center;
     align-items: start;
 }
-.portafolio img{
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  max-width: 850px; 
-  border: 2px solid #c49ed48e; 
-  border-radius: 24px; 
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  background-color: #ffffff;
-  box-sizing: border-box;
-  display: block;
-}
-.portafolio iframe {
+.portafolio img, .portafolio iframe{
     width: 100%;
     height: 500px;
+    object-fit: cover; /* Una imagen o video llena el espacio asignado por el contenedor*/
     max-width: 850px; 
     border: 2px solid #c49ed48e; 
     border-radius: 24px; 
