@@ -38,7 +38,7 @@ h1 {
     width: 100%;
     height: auto;
 }
-@media (max-width: 600px){
+@media (max-width: 768px){
     h1{
         font-size: 35px;
     }
@@ -50,7 +50,4 @@ h1 {
         width: 90%;
         height: 400px;
     }
-    /* .portafolio{
-        width: 100%;
-    } */
 }
