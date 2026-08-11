@@ -16,9 +16,51 @@ h1 {
   padding: 0 20px;
 }
 
-.nosotros:hover {
-  transform: scale(1.04);
-  box-shadow: 0 8px 20px rgba(196, 158, 212, 0.3);
+.nav_grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 850px;
+  width: 100%;
+}
+
+details {
+  margin-top: 15px;
+}
+
+summary {
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.btnvermas {
+  display: inline-block;
+  margin-top: 15px;
+  color: #8ad1f2;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.btnvermas:hover {
+  color: #c49ed4;
+}
+
+details[open] .btnvermas {
+  font-size: 0;
+}
+
+details[open] .btnvermas::after {
+  content: "Ver menos";
+  font-size: 1rem;
+}
+
+.contenido_oculto {
+  margin-bottom: 15px;
 }
 
 .nosotros {
@@ -32,6 +74,11 @@ h1 {
   background-color: #ffffff;
   box-sizing: border-box;
   transition: transform 0.3s ease;
+}
+
+.nosotros:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(196, 158, 212, 0.3);
 }
 
 .quesomos {

@@ -70,11 +70,15 @@ h1{
   text-align: center;
   background-color: #ffffff;
   box-sizing: border-box;
+   transition: transform 0.3s ease;
 }
 .iconoQH{
     height: 70px;
     width: 70px;
     object-fit: contain;
+}
+.descripcionQH:hover{
+    transform: scale(1.04);
 }
 #btnConocenos, #btnPortafolio{
     height: 50px;
