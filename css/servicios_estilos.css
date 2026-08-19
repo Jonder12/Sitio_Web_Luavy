@@ -19,7 +19,7 @@ h1 {
     border: 4px solid #c49ed4;
     border-radius: 20px;
     text-align: center;
-    width: 90%;
+    width: 90%; 
     margin: 30px auto 15px auto;
     padding: 25px 20px;
     transition: transform 0.2s ease;
@@ -43,6 +43,14 @@ h1 {
     text-align: center;
     gap: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dos {
+    grid-column: span 3;
+}
+
+#contenedor > section:not(.dos) {
+    grid-column: span 2;
 }
 
 .lderecha:hover, .lizquierda:hover {
@@ -88,7 +96,7 @@ h1 {
     }
 
     #contenedor {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         max-width: 1100px;
         gap: 26px;
     }
@@ -117,11 +125,5 @@ h1 {
 
     #serviciosFT {
         width: 60%;
-    }
-
-    /* Si el número de tarjetas no es múltiplo de 3, la última queda sola:
-       la centramos ubicándola en la columna del medio */
-    #contenedor > section:last-child {
-        grid-column: 2 / 3;
     }
 }
