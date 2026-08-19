@@ -202,6 +202,10 @@
         flex: 1 1 100%;
         width: 100%;
     }
+
+    .info-contacto {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -220,5 +224,15 @@
     .form-contacto button {
         align-self: stretch;
         text-align: center;
+    }
+
+    .campo.flotante label {
+        font-size: 0.75rem;
+        text-align: left;
+    }
+
+    .campo.flotante input::placeholder,
+    .campo.flotante textarea::placeholder {
+        font-size: 0.65rem;
     }
 }
