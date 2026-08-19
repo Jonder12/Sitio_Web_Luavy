@@ -18,7 +18,7 @@ h1 {
 
 .nav_grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); 
   gap: 25px;
   max-width: 850px;
   width: 100%;
@@ -34,6 +34,10 @@ summary {
 
 summary::-webkit-details-marker {
   display: none;
+}
+
+.nosotros.historia {
+  grid-column: 1 / -1;
 }
 
 .btnvermas {
@@ -111,6 +115,11 @@ div h2 {
    RESPONSIVE
    ========================================================= */
 @media (max-width: 1024px) {
+
+  .nav_grid {
+    grid-template-columns: 1fr;
+  }
+
   .quesomos {
     flex-direction: column;
     text-align: center;
